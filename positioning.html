@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Demo</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+        }
+        .positioned {
+            background-color: #dcdcdc;
+
+            position: absolute;
+            top:  30px;
+            right: 50px;
+        }
+
+        #para-2 {
+            position: relative;
+        }
+
+        #tiger-photo {
+            width: 450px;
+            display: block;
+            position: -webkit-sticky;
+            top: 0;
+            left: 0;
+        }
+
+        #bq-1 {
+            border-top: 1px solid #dcdcdc;
+            border-bottom: 1px solid #dcdcdc;
+            padding: 1em 0;
+            float:left;
+            width: 200px;
+        }
+
+        p {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p id="para-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue, urna nec tempus gravida, felis nibh accumsan ante, sed auctor urna lacus quis lacus. Phasellus tristique felis sem, sed congue sem placerat at. Sed porttitor augue quis erat pharetra, at tincidunt eros dapibus. <span class="positioned">Morbi semper hendrerit magna</span> ac feugiat. Nam tellus mi, bibendum nec lacus vel, lobortis lobortis nunc. Vivamus rutrum iaculis lobortis. Duis pellentesque nulla orci, ac pellentesque velit suscipit et. Curabitur bibendum nisl risus, non maximus lectus interdum nec. Nullam ut risus pellentesque, facilisis sapien eu, luctus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum aliquet a felis ut viverra. Vestibulum velit velit, semper a auctor ac, tempor eget ex. Aliquam vel diam vitae arcu scelerisque molestie et condimentum erat.</p>
+
+    
+    
+    <p id="para-2">
+        <img id="tiger-photo" src="tiger.jpg" alt="A photo of a tiger">Sed pharetra tristique mauris sed pulvinar. Sed pharetra est bibendum placerat rhoncus. In eu mauris quis leo condimentum vehicula sed quis nibh. Integer nulla risus, semper ac elementum ut, pharetra quis ligula. Aliquam at dictum eros. Nam in placerat nibh. Donec pulvinar vitae massa a rutrum. <span class="positioned">Suspendisse nec mi lectus.</span> Aliquam vel tortor eu ex lobortis rhoncus vel ut dolor. Phasellus rhoncus volutpat sem, a iaculis ipsum. Cras mattis leo vitae nisl ornare rutrum. Nulla fringilla nisi nec quam porttitor luctus. Nulla pharetra aliquet odio ut sollicitudin.</p>
+    
+    <p id="para-3">Sed pulvinar, magna non lobortis ultrices, metus quam convallis augue, in malesuada leo urna quis sem. Aliquam eget elit dignissim, auctor nunc vitae, pharetra velit. Aenean sed dolor a ante pulvinar dignissim. Donec cursus lorem et lectus venenatis, ac iaculis elit rhoncus. Donec sit amet elit in nisi rutrum condimentum et ac libero. Cras et urna suscipit, venenatis purus ut, pulvinar ex. Nullam venenatis ligula vitae libero elementum semper. Morbi quis aliquam ligula. Integer quis interdum nisl, quis molestie mauris. Cras ex ex, fringilla ut semper vitae, consequat eu ligula. Pellentesque ipsum neque, sollicitudin posuere est in, accumsan hendrerit metus. Vivamus sit amet erat felis. Morbi at hendrerit augue, ac semper neque.</p>
+</body>
+</html>

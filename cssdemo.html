@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Demo</title>
+    <style>
+        body {
+            padding: 2em;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #333;
+            color: #ddd;
+        }
+
+        p {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.7em;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: rgba(14, 96, 96, 1);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+
+        p.highlighted {
+            background-color: bisque;
+        }
+
+        .highlighted {
+            background-color: #fc0;
+            color: #000;
+        }
+
+        .highlighted:hover {
+            background-color: red;
+        }
+
+        a {
+            color: rgb(0, 145, 255);
+        }
+
+        a:visited {
+            color:rgba(14, 96, 96, 1);
+        }  
+
+        a:hover {
+            background-color: rgb(0, 145, 255);
+            color: #333;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color:rgba(14, 96, 96, 1);
+            color: #fff;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 40px;
+            padding-right: 40px;
+            border-right: 1px solid #fff;
+        }
+
+        nav ul li:last-of-type {
+            border-right: none;
+            
+        }
+
+        nav ul li a {
+            padding: 10px 10px;
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:visited {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        nav ul li a[href^='http://']::after {
+            content: ' off-site';
+            font-size: 0.5em;
+            font-style: italic;
+        }
+
+        a[href$='.pdf']::after {
+            content: '[pdf]';
+            font-size: 0.6em;
+        }
+
+        p::first-line {
+            color: red;
+        }
+
+        p::first-letter {
+            font-size: 3em;
+        }
+
+        body {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#804fa5+0,62993b+44,4096ee+100 */
+            background: #804fa5; /* Old browsers */
+            background: -moz-linear-gradient(top,  #804fa5 0%, #62993b 44%, #4096ee 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #804fa5 0%,#62993b 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #804fa5 0%,#62993b 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#804fa5', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+        }
+
+        .one {
+            color: red;
+        }
+
+        .box {
+            background-color: #fff;
+            width: 50%;
+            min-height: 200px;
+            overflow: hidden;
+
+            padding: 50px 100px 70px 20px;
+
+            border: 4px solid rgb(0, 145, 255);
+            border-radius: 1em;
+
+            margin: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="one box">
+        One
+        <p>Sed rutrum neque a libero pharetra ullamcorper vel sit amet ligula. Cras gravida lobortis metus sed posuere. Pellentesque id dui nisl. Nullam leo ipsum, iaculis sit amet luctus quis, bibendum id nunc. Morbi condimentum eros id maximus venenatis. Fusce sed dolor et enim egestas imperdiet non ac sapien. Mauris sit amet tortor ac nisi lobortis euismod ac eu lectus. <span class="highlighted">Cras vel tellus maximus, maximus ligula vitae, feugiat sem. Curabitur non risus quis diam eleifend venenatis vel a tortor. Nulla convallis mauris purus, sit amet vestibulum libero pretium at.</span> Ut consectetur, sem sit amet efficitur semper, mauris lorem aliquet leo, id tristique ligula tortor sed est. Praesent vel metus sollicitudin, rutrum quam sit amet, mollis orci. Integer fringilla metus sed metus vulputate sodales. Ut risus lacus, congue egestas scelerisque a, mollis at nisi.</p>
+
+    </div>
+
+    <div class="two box">
+        Two
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="http://google.com">Google</a></li>
+            <li><a href="http://yahoo.com">Yahoo</a></li>
+            <li><a class="bar" href="index.html">Homepage</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <h1>This is a CSS Demo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor consequat orci, sed eleifend mauris. Sed blandit mollis arcu, nec aliquam elit. Morbi non mauris non leo ultricies molestie. Aliquam eu mauris mauris. Nunc in imperdiet libero. Integer semper mauris in finibus pulvinar. <a href="https://google.com">Maecenas eget gravida</a> dui. Sed pharetra dui et magna volutpat facilisis. Nunc in vulputate velit. Proin vel feugiat enim, non gravida est. Mauris rutrum nibh ac ipsum condimentum accumsan. Proin vel purus vulputate augue accumsan volutpat non in sem. Cras ut elit tortor. In vitae ante finibus, pretium libero vitae, dapibus massa. Morbi sit amet faucibus nisi.</p>
+
+
+
+    <ul class="top">
+        <li>1
+            <ul>
+                <li>1.1</li>
+                <li>1.2</li>
+                <li>1.3</li>
+                <li>1.4</li>
+            </ul>
+        </li>
+        <li>2
+            <ul>
+                <li>2.1</li>
+                <li>2.2</li>
+                <li>2.3</li>
+                <li>2.4
+                    <ul>
+                        <li>2.4.1</li>
+                        <li>2.4.2</li>
+                        <li>2.4.3</li>
+                        <li>2.4.4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>3
+            <ul>
+                <li>3.1</li>
+                <li>3.2</li>
+                <li>3.3</li>
+                <li>3.4</li>
+            </ul>
+        </li>
+        <li>4
+            <ul>
+                <li>4.1</li>
+                <li>4.2</li>
+                <li>4.3</li>
+                <li>4.4</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p id="second-paragraph">Quisque non dictum lacus. <span class="highlighted">Maecenas vestibulum dapibus erat molestie rhoncus.</span> Pellentesque eget viverra quam. Etiam risus tortor, blandit sit amet bibendum in, tempus eget metus. Quisque iaculis lacus vel tellus tristique elementum. Aenean blandit augue in nulla dignissim, a dignissim augue mattis. Integer urna lacus, dictum nec consectetur sit amet, dictum nec augue. Phasellus hendrerit turpis vitae augue luctus, ac lacinia elit elementum. Integer vehicula pulvinar tellus.</p>
+    
+    <h2>Subheader</h2>
+    <p>Sed rutrum neque a libero pharetra ullamcorper vel sit amet ligula. Cras gravida lobortis metus sed posuere. Pellentesque id dui nisl. Nullam leo ipsum, iaculis sit amet luctus quis, bibendum id nunc. Morbi condimentum eros id maximus venenatis. Fusce sed dolor et enim egestas imperdiet non ac sapien. Mauris sit amet tortor ac nisi lobortis euismod ac eu lectus. <span class="highlighted">Cras vel tellus maximus, maximus ligula vitae, feugiat sem. Curabitur non risus quis diam eleifend venenatis vel a tortor. Nulla convallis mauris purus, sit amet vestibulum libero pretium at.</span> Ut consectetur, sem sit amet efficitur semper, mauris lorem aliquet leo, id tristique ligula tortor sed est. Praesent vel metus sollicitudin, rutrum quam sit amet, mollis orci. Integer fringilla metus sed metus vulputate sodales. Ut risus lacus, congue egestas scelerisque a, mollis at nisi.</p>
+    
+    <h2>Subheader</h2>
+    <p>Praesent vitae tellus vitae erat blandit viverra luctus id neque. Sed dapibus commodo ornare. Nunc lectus augue, interdum vitae ultricies vitae, iaculis quis nulla. Integer in quam ligula. Nunc mi sapien, bibendum eget consequat vitae, tempor a nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque sagittis lorem orci. Fusce fermentum tortor sed arcu iaculis ornare. Donec fringilla nisl eget metus tristique blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sollicitudin eleifend tellus vel sagittis. Sed vitae augue quis dolor sagittis vulputate quis sed eros. Suspendisse facilisis, libero et pulvinar malesuada, leo lectus molestie arcu, a fermentum est felis ac lectus. Nulla nec lorem ut elit ultrices laoreet.</p>
+    
+    <h2>Subheader</h2>
+    <p>Maecenas vulputate libero et orci imperdiet hendrerit. Mauris luctus mauris et nunc varius sollicitudin. Vestibulum lobortis erat justo, eu ullamcorper metus dignissim ac. Praesent tincidunt velit dapibus, ultricies tortor a, scelerisque odio. Etiam molestie imperdiet dolor pretium pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer fringilla nulla vel sem posuere, vitae varius nulla aliquam. In hac habitasse platea dictumst. Donec cursus justo rhoncus dolor ullamcorper convallis. Quisque ac metus facilisis, ultrices leo ut, maximus erat. Nam molestie nulla scelerisque rutrum porttitor. Donec mattis elit nisl, eget viverra nisi lobortis sed. Nunc nec mauris maximus, lacinia nisi vel, feugiat libero. Curabitur sed feugiat est. Donec sit amet nunc ac dolor laoreet malesuada a et nisi.</p>
+
+    <a href="something.pdf">This is a PDF</a>
+</body>
+</html>
