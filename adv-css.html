@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .testdiv {
+            box-sizing: border-box;
+            background-color: #fc0;
+            width: 400px;
+            padding: 10%;
+            font-weight: bold;
+            transition: all 0.5s ease;           
+        }
+
+        .testdiv.moved {
+            top: 500px;
+            left: 500px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: none;
+            display: flex;
+        }
+
+        nav ul li a {
+            padding: 0.5em 1em;
+            background-color: #ccc;
+            margin-right: 0.3em;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease 0.1s;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #fc0;
+            transform: scale(1.1);
+        }
+
+        #themenu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #dcdcdc;
+            width: 400px;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #themenu.open {
+            height: 600px;
+            padding: 1em;
+        }
+
+        #themenu li a {
+            padding: 0.5em;
+            margin: 20px;
+            background-color: #000;
+            color: #fc0 !important;
+            display: block;
+        }
+
+        #themenu li a:visited {
+            color: #fff;
+        }
+
+        #tigerpic {
+            transform: rotate(15deg);
+        }
+    </style>
+    <script>
+        function moveBox(){
+            var box = document.getElementById('thebox');
+            box.classList.add('moved');
+        }
+
+        function moveBack() {
+            var box = document.getElementById('thebox');
+            box.classList.remove('moved');
+        }
+
+        function toggleMenu(){
+            var menu = document.getElementById('themenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <div id="thebox" class="testdiv moved">
+        This is some test content!
+    </div>
+
+    <nav>
+        <ul>
+            <li><a onclick="moveBox()" href="#">Move The Box</a></li>
+            <li><a onclick="moveBack()" href="#">Move it Back</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+            <li><a href="#">Five</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="toggleMenu()">Open Menu</button>
+    <ul id="themenu">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+    </ul>
+</body>
+</html>

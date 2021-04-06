@@ -1,0 +1,44 @@
+$yellow: #fc0;
+
+
+.testdiv {
+    box-sizing: border-box;
+    background-color: $yellow;
+    width: 400px;
+    padding: 10%;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+    &.moved {
+        top: 500px;
+        left: 500px;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: none;
+        display: flex;
+
+        li {
+            a {
+                padding: 0.5em 1em;
+                background-color: #ccc;
+                margin-right: 0.3em;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: #fff;
+                text-decoration: none;
+                transition: all 0.3s ease 0.1s;
+                display: block;
+
+                &:hover {
+                    background-color: #fc0;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
